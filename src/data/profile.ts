@@ -98,7 +98,7 @@ export const profile: Profile = {
   // -------------------------------------------------------------------------
   name: 'Moataz Mohamed',
   title: 'Senior Android Engineer',
-  photo: '/images/profile.jpg', // Set to '' to hide photo
+  photo: 'https://github.com/moatazhamada.png', // Using GitHub avatar
   email: 'Motazhamada@gmail.com',
   location: 'Giza, Egypt',
 
