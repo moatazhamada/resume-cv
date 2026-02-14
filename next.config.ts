@@ -6,6 +6,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  // GitHub Pages serves from /resume-cv/ subdirectory
+  basePath: '/resume-cv',
 };
 
 export default nextConfig;
