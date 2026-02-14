@@ -45,10 +45,7 @@ The resume has been fully customized and configured for GitHub Pages deployment 
 
 ## Current Focus
 
-The resume is fully customized and ready for deployment. Next steps:
-1. Enable GitHub Pages in repository settings
-2. Add project thumbnails to `/public/projects/` (optional)
-3. Adjust theme color if desired
+The resume is deployed and live at `https://moatazhamada.github.io/resume-cv/`. The site is fully functional with all styling working correctly.
 
 ## Known Considerations
 
@@ -56,13 +53,16 @@ The resume is fully customized and ready for deployment. Next steps:
 - Project thumbnails expect `/projects/` images → Add screenshots (optional)
 - Contact form won't work on static hosting (needs backend service)
 - API routes removed for static export compatibility
+- **basePath**: Set to `/resume-cv` for GitHub Pages subdirectory deployment
 
 ## Deployment Configuration
 
 - **Platform**: GitHub Pages
+- **URL**: `https://moatazhamada.github.io/resume-cv/`
 - **Build Output**: Static HTML (`out/` directory)
 - **Workflow**: `.github/workflows/deploy.yml`
 - **Profile Photo**: GitHub avatar URL
+- **basePath**: `/resume-cv` (required for CSS/assets to load correctly)
 
 ## Pending Improvements (Optional)
 
@@ -75,6 +75,7 @@ The resume is fully customized and ready for deployment. Next steps:
 
 | Date | Activity |
 |------|----------|
+| 2026-02-14 | Fixed CSS not loading - added basePath `/resume-cv` to next.config.ts |
 | 2026-02-14 | Configured GitHub Pages deployment with static export |
 | 2026-02-14 | Customized resume for Moataz Mohamed - Senior Android Engineer |
 | 2026-01-22 | Memory bank updated to match .kilocode standard structure |
