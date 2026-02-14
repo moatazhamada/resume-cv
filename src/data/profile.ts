@@ -96,36 +96,34 @@ export const profile: Profile = {
   // -------------------------------------------------------------------------
   // BASIC INFO (Required)
   // -------------------------------------------------------------------------
-  name: 'Alex Johnson',
-  title: 'Senior Software Engineer',
+  name: 'Moataz Mohamed',
+  title: 'Senior Android Engineer',
   photo: '/images/profile.jpg', // Set to '' to hide photo
-  email: 'alex.johnson@example.com',
-  location: 'San Francisco, CA',
+  email: 'Motazhamada@gmail.com',
+  location: 'Giza, Egypt',
 
   // -------------------------------------------------------------------------
   // CONTACT & SOCIAL (Optional - remove or set to undefined if not needed)
   // -------------------------------------------------------------------------
-  phone: '+1 (555) 123-4567',
-  website: 'https://alexjohnson.dev',
-  linkedin: 'https://linkedin.com/in/alexjohnson',
-  github: 'https://github.com/alexjohnson',
-  twitter: 'https://twitter.com/alexjohnson',
+  phone: '+201005254559',
+  linkedin: 'https://www.linkedin.com/in/moatazhamada',
+  github: 'https://www.github.com/moatazhamada',
 
   // -------------------------------------------------------------------------
   // PROFESSIONAL SUMMARY
   // Keep this concise: 2-4 sentences that capture who you are professionally
   // -------------------------------------------------------------------------
-  summary: `Results-driven software engineer with 8+ years of experience building scalable web applications. Passionate about clean code, performance optimization, and mentoring junior developers. Expert in React, TypeScript, and cloud architecture.`,
+  summary: `Highly skilled Senior Android Engineer with a bachelor's degree in computer science and a demonstrated history of working in the software development industry. Seeking a challenging and progressive position to leverage my knowledge and experience in building innovative mobile applications. Proficient in Kotlin, Java, and various software engineering concepts. Strong problem-solving abilities, collaboration skills, and a passion for delivering high-quality mobile solutions.`,
 
   // -------------------------------------------------------------------------
   // KEY HIGHLIGHTS
   // 3-5 achievement statements with metrics when possible
   // -------------------------------------------------------------------------
   highlights: [
-    'Led development of platform serving 1M+ users',
-    'Reduced page load time by 60%',
-    'Managed team of 5 engineers',
-    'Speaker at 3 tech conferences',
+    '7+ years of Android development experience',
+    'Built financial apps from scratch serving thousands of users',
+    'Published 10+ apps on Google Play Store',
+    'Experience with fintech, sports, and enterprise applications',
   ],
 };
 

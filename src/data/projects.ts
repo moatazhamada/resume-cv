@@ -129,11 +129,12 @@ export interface Project {
  */
 export const projectCategories: string[] = [
   'All',
-  'Web Application',
-  'SaaS',
-  'Mobile App',
-  'Data Visualization',
-  'Developer Tools',
+  'Sports',
+  'Travel',
+  'Finance',
+  'Fintech',
+  'Enterprise',
+  'CRM',
   // Add more categories here:
   // 'E-Commerce',
   // 'AI/ML',
@@ -151,168 +152,195 @@ export const projectCategories: string[] = [
  */
 export const projects: Project[] = [
   // ---------------------------------------------------------------------------
-  // FEATURED PROJECT 1
+  // FC KÖLN APP
   // ---------------------------------------------------------------------------
   {
     id: 'proj-1',
-    slug: 'e-commerce-platform',
-    title: 'E-Commerce Platform',
+    slug: 'fc-koln-app',
+    title: 'FC Köln | Sports Club Management App',
     description:
-      'Full-stack e-commerce solution with real-time inventory management and payment processing.',
-    longDescription: `Built a comprehensive e-commerce platform from scratch, featuring real-time inventory tracking, 
-    secure payment processing with Stripe, and an admin dashboard for order management. The platform handles 
-    thousands of concurrent users and processes over $2M in transactions monthly.`,
-    thumbnail: '/projects/ecommerce-thumb.jpg',
-    images: [
-      '/projects/ecommerce-1.jpg',
-      '/projects/ecommerce-2.jpg',
-      '/projects/ecommerce-3.jpg',
-    ],
-    technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Stripe', 'Redis', 'AWS'],
-    category: 'Web Application',
-    role: 'Lead Developer',
-    duration: '6 months',
-    liveUrl: 'https://example-ecommerce.com',
-    githubUrl: 'https://github.com/alexjohnson/ecommerce',
+      'A custom app for managing the operations and events of FC Köln, providing up-to-date information on matches, schedules, and club news.',
+    thumbnail: '/projects/fc-koln-thumb.jpg',
+    images: ['/projects/fc-koln-1.jpg'],
+    technologies: ['Kotlin', 'Android', 'MVVM'],
+    category: 'Sports',
+    role: 'Senior Mobile Engineer',
+    duration: '2023 - Present',
+    liveUrl: 'https://play.google.com/store/apps/details?id=de.fckoeln.app',
     featured: true,
     highlights: [
-      'Processed $2M+ in transactions',
-      '99.9% uptime over 2 years',
-      '50ms average API response time',
-      'Handles 10K+ concurrent users',
+      'Improved app speed and analytics',
+      'Refactored internal architecture',
+      'Enhanced user experience',
     ],
   },
 
   // ---------------------------------------------------------------------------
-  // FEATURED PROJECT 2
+  // ALLTOURS APP
   // ---------------------------------------------------------------------------
   {
     id: 'proj-2',
-    slug: 'task-management-app',
-    title: 'TaskFlow - Task Management',
+    slug: 'alltours-app',
+    title: 'Mein Alltours Reiseplaner | Travel Planning App',
     description:
-      'Collaborative task management application with real-time updates and team features.',
-    longDescription: `A modern task management application designed for remote teams. Features include 
-    real-time collaboration, Kanban boards, time tracking, and integrations with popular tools like 
-    Slack and GitHub.`,
-    thumbnail: '/projects/taskflow-thumb.jpg',
-    images: ['/projects/taskflow-1.jpg', '/projects/taskflow-2.jpg'],
-    technologies: ['React', 'Node.js', 'Socket.io', 'MongoDB', 'Docker'],
-    category: 'SaaS',
-    role: 'Full-Stack Developer',
-    duration: '4 months',
-    liveUrl: 'https://taskflow-demo.com',
-    githubUrl: 'https://github.com/alexjohnson/taskflow',
+      'An application for seamless travel planning with Alltours, allowing users to manage their itineraries, book accommodations, and receive personalized recommendations.',
+    thumbnail: '/projects/alltours-thumb.jpg',
+    images: ['/projects/alltours-1.jpg'],
+    technologies: ['Kotlin', 'Android', 'MVVM'],
+    category: 'Travel',
+    role: 'Senior Mobile Engineer',
+    duration: '2023 - Present',
+    liveUrl: 'https://play.google.com/store/apps/details?id=de.alltours.reisen',
     featured: true,
     highlights: [
-      '5K+ active users',
-      'Real-time collaboration',
-      '15+ third-party integrations',
-      '4.8/5 user rating',
+      'Enhanced app performance',
+      'Improved internal structure',
+      'Better analytics integration',
     ],
   },
 
   // ---------------------------------------------------------------------------
-  // FEATURED PROJECT 3
+  // OLB BANKING APP
   // ---------------------------------------------------------------------------
   {
     id: 'proj-3',
-    slug: 'analytics-dashboard',
-    title: 'DataViz Analytics Dashboard',
+    slug: 'olb-banking',
+    title: 'OLB: Finanzen & Banking to go',
     description:
-      'Interactive analytics dashboard with customizable charts and real-time data visualization.',
-    thumbnail: '/projects/analytics-thumb.jpg',
-    images: ['/projects/analytics-1.jpg', '/projects/analytics-2.jpg'],
-    technologies: ['React', 'D3.js', 'Python', 'FastAPI', 'PostgreSQL'],
-    category: 'Data Visualization',
-    role: 'Frontend Lead',
-    duration: '3 months',
-    // liveUrl: undefined,  // No live demo
-    // githubUrl: undefined,  // Private repository
+      'A financial application that offers banking solutions for users to manage their accounts, payments, and transactions on the go.',
+    thumbnail: '/projects/olb-thumb.jpg',
+    images: ['/projects/olb-1.jpg'],
+    technologies: ['Xamarin', 'C#', 'Android'],
+    category: 'Finance',
+    role: 'Senior Mobile Engineer',
+    duration: '2023 - Present',
+    liveUrl: 'https://play.google.com/store/apps/details?id=de.bs.ibanking',
     featured: true,
     highlights: [
-      '20+ chart types',
-      'Export to PDF/Excel',
-      'Custom report builder',
-      'Role-based access control',
+      'Xamarin native development',
+      'Banking solutions',
+      'Secure transactions',
     ],
   },
 
   // ---------------------------------------------------------------------------
-  // NON-FEATURED PROJECT
+  // KLIVVR APP
   // ---------------------------------------------------------------------------
   {
     id: 'proj-4',
-    slug: 'mobile-fitness-app',
-    title: 'FitTrack Mobile App',
+    slug: 'klivvr-app',
+    title: 'Klivvr | Financial App',
     description:
-      'Cross-platform fitness tracking application with workout plans and progress analytics.',
-    thumbnail: '/projects/fitness-thumb.jpg',
-    images: ['/projects/fitness-1.jpg', '/projects/fitness-2.jpg'],
-    technologies: ['React Native', 'TypeScript', 'Firebase', 'Node.js'],
-    category: 'Mobile App',
-    role: 'Mobile Developer',
-    duration: '5 months',
-    // liveUrl: undefined,  // App store link would go here
-    githubUrl: 'https://github.com/alexjohnson/fittrack',
-    featured: false,
+      'Klivvr is an all-in-one financial app for smart spending, sending, receiving, and tracking.',
+    thumbnail: '/projects/klivvr-thumb.jpg',
+    images: ['/projects/klivvr-1.jpg'],
+    technologies: ['Kotlin', 'Android', 'MVVM', 'CI/CD'],
+    category: 'Fintech',
+    role: 'Senior Android Engineer',
+    duration: '2021 - 2023',
+    liveUrl: 'https://play.google.com/store/apps/details?id=com.klivvr.consumer',
+    featured: true,
     highlights: [
-      'iOS & Android support',
-      'Offline-first architecture',
-      'Wearable device integration',
-      '10K+ downloads',
+      'Built app from scratch',
+      'Published on Play Store',
+      'Regular updates and improvements',
     ],
   },
 
   // ---------------------------------------------------------------------------
-  // NON-FEATURED PROJECT
+  // KASHAT APP
   // ---------------------------------------------------------------------------
   {
     id: 'proj-5',
-    slug: 'open-source-cli',
-    title: 'DevToolkit CLI',
+    slug: 'kashat-app',
+    title: 'Kashat | Fintech Lending App',
     description:
-      'Open-source command-line toolkit for developers with code generation and automation.',
-    thumbnail: '/projects/cli-thumb.jpg',
-    images: ['/projects/cli-1.jpg'],
-    technologies: ['Go', 'Cobra', 'Docker'],
-    category: 'Developer Tools',
-    role: 'Creator & Maintainer',
-    duration: 'Ongoing',
-    // liveUrl: undefined,  // CLI tools usually don't have live URLs
-    githubUrl: 'https://github.com/alexjohnson/devtoolkit',
+      'Kashat is a lending app offering small loans for small business owners. Loans start from 100 EGP and go up to 2000 EGP.',
+    thumbnail: '/projects/kashat-thumb.jpg',
+    images: ['/projects/kashat-1.jpg'],
+    technologies: ['Kotlin', 'Android', 'MVVM'],
+    category: 'Fintech',
+    role: 'Senior Android Developer',
+    duration: '2020 - 2021',
+    liveUrl: 'https://play.google.com/store/apps/details?id=com.klivvr.consumer',
     featured: false,
     highlights: [
-      '2K+ GitHub stars',
-      '500+ contributors',
-      'Used by 100+ companies',
-      'Weekly releases',
+      'Increased user engagement',
+      'Regular Play Store updates',
+      'Fintech lending solution',
     ],
   },
 
   // ---------------------------------------------------------------------------
-  // ADD MORE PROJECTS HERE
+  // GIG APP
   // ---------------------------------------------------------------------------
-  // {
-  //   id: 'proj-6',
-  //   slug: 'your-project-slug',
-  //   title: 'Your Project Title',
-  //   description: 'Short description of your project...',
-  //   longDescription: 'Detailed description...',  // Optional
-  //   thumbnail: '/projects/your-project-thumb.jpg',
-  //   images: ['/projects/your-project-1.jpg'],
-  //   technologies: ['Tech1', 'Tech2', 'Tech3'],
-  //   category: 'Web Application',
-  //   role: 'Your Role',
-  //   duration: '3 months',
-  //   liveUrl: 'https://your-project.com',  // Optional
-  //   githubUrl: 'https://github.com/you/project',  // Optional
-  //   featured: false,
-  //   highlights: [
-  //     'Highlight 1 with metrics',
-  //     'Highlight 2',
-  //   ],
-  // },
+  {
+    id: 'proj-6',
+    slug: 'gig-app',
+    title: 'GIG | Cars Insurance Services',
+    description:
+      'GIG is an application for Arab Misr Insurance Company to help both company and customers communicate and allows customers to report car accidents.',
+    thumbnail: '/projects/gig-thumb.jpg',
+    images: ['/projects/gig-1.jpg'],
+    technologies: ['Java', 'Android', 'MVP'],
+    category: 'Enterprise',
+    role: 'Android Developer',
+    duration: '2017 - 2020',
+    liveUrl: 'https://play.google.com/store/apps/details?id=com.sts.gigEgypt',
+    featured: false,
+    highlights: [
+      'Client and Reviewer apps',
+      'Insurance claim reporting',
+      'Enterprise solution',
+    ],
+  },
+
+  // ---------------------------------------------------------------------------
+  // AZURA CRM
+  // ---------------------------------------------------------------------------
+  {
+    id: 'proj-7',
+    slug: 'azura-crm',
+    title: 'Azura | CRM Application',
+    description:
+      'App for managing all your company\'s relationships and interactions with customers and potential customers.',
+    thumbnail: '/projects/azura-thumb.jpg',
+    images: ['/projects/azura-1.jpg'],
+    technologies: ['Java', 'Android', 'MVP'],
+    category: 'CRM',
+    role: 'Android Developer',
+    duration: '2017 - 2020',
+    liveUrl: 'https://play.google.com/store/apps/details?id=com.stss.azur',
+    featured: false,
+    highlights: [
+      'Customer relationship management',
+      'Lead tracking',
+      'Business solution',
+    ],
+  },
+
+  // ---------------------------------------------------------------------------
+  // STEP ONE CRM
+  // ---------------------------------------------------------------------------
+  {
+    id: 'proj-8',
+    slug: 'step-one-crm',
+    title: 'Step One | CRM Application',
+    description:
+      'Manage customers and leads using this CRM system.',
+    thumbnail: '/projects/stepone-thumb.jpg',
+    images: ['/projects/stepone-1.jpg'],
+    technologies: ['Java', 'Android', 'MVC'],
+    category: 'CRM',
+    role: 'Android Developer',
+    duration: '2017 - 2020',
+    liveUrl: 'https://play.google.com/store/apps/details?id=com.sts.steponecrm',
+    featured: false,
+    highlights: [
+      'Customer management',
+      'Lead tracking system',
+    ],
+  },
 ];
 
 // =============================================================================

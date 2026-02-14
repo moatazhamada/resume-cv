@@ -117,101 +117,147 @@ export interface Experience {
  */
 export const experience: Experience[] = [
   // ---------------------------------------------------------------------------
-  // CURRENT POSITION (or most recent)
+  // CURRENT POSITION
   // ---------------------------------------------------------------------------
   {
     id: 'exp-1',
-    title: 'Senior Software Engineer',
-    company: 'TechCorp Inc.',
-    // companyLogo: '/logos/techcorp.png',  // Uncomment and add logo if you have one
-    location: 'San Francisco, CA',
+    title: 'Senior Mobile Engineer (Android)',
+    company: 'App-Agentur NEXT Munich GmbH',
+    location: 'Munich, Germany',
     type: 'full-time',
-    startDate: '2022-01',
-    // endDate: undefined,  // Omit or undefined for current position
+    startDate: '2023-11',
     current: true,
     description:
-      'Lead development of customer-facing web applications and mentor junior developers.',
+      'Working on FC Köln and Alltours apps focusing on refactoring and enhancements. Also contributing to OLBBanking app (Xamarin native).',
     achievements: [
-      'Architected microservices platform handling 10M+ requests/day',
-      'Reduced deployment time by 80% through CI/CD improvements',
-      'Mentored 3 junior developers to mid-level positions',
-      'Led migration from monolith to microservices architecture',
+      'Improved app speed, analytics, and internal architecture for FC Köln and Alltours apps',
+      'Worked on OLBBanking app using Xamarin native',
+      'Documented and created tutorials for later use in app development cycles',
+      'Collaborated across multi-disciplinary teams using Agile development frameworks',
     ],
-    technologies: [
-      'React',
-      'TypeScript',
-      'Node.js',
-      'PostgreSQL',
-      'AWS',
-      'Docker',
-      'Kubernetes',
-    ],
+    technologies: ['Kotlin', 'Java', 'Xamarin', 'Android', 'CI/CD', 'Agile'],
   },
 
   // ---------------------------------------------------------------------------
-  // PREVIOUS POSITION
+  // PREVIOUS POSITIONS
   // ---------------------------------------------------------------------------
   {
     id: 'exp-2',
-    title: 'Software Engineer',
-    company: 'StartupXYZ',
-    location: 'San Francisco, CA',
+    title: 'Senior Android Engineer',
+    company: 'Klivvr By Orascom Financial Holding',
+    location: 'Egypt',
     type: 'full-time',
-    startDate: '2019-03',
-    endDate: '2021-12',
-    current: false,
-    description: 'Full-stack development for a fast-growing SaaS platform.',
-    achievements: [
-      'Built real-time collaboration features used by 50K+ users',
-      'Implemented automated testing reducing bugs by 40%',
-      'Optimized database queries improving response time by 60%',
-    ],
-    technologies: ['React', 'Python', 'Django', 'PostgreSQL', 'Redis', 'AWS'],
-  },
-
-  // ---------------------------------------------------------------------------
-  // EARLIER POSITION
-  // ---------------------------------------------------------------------------
-  {
-    id: 'exp-3',
-    title: 'Junior Developer',
-    company: 'WebAgency Co.',
-    location: 'Los Angeles, CA',
-    type: 'full-time',
-    startDate: '2016-06',
-    endDate: '2019-02',
+    startDate: '2021-08',
+    endDate: '2023-10',
     current: false,
     description:
-      'Developed custom web solutions for various clients across different industries.',
+      'Built the Klivvr financial application from scratch, ensuring high-quality user experience.',
     achievements: [
-      'Delivered 20+ client projects on time and within budget',
-      'Introduced component-based architecture improving code reuse',
-      'Created internal tools saving 10 hours/week of manual work',
+      'Built the Klivvr application from scratch, meeting unique requirements',
+      'Implemented new features and enhancements, improving functionality and usability',
+      'Collaborated with product and security teams to refine features before implementation',
+      'Published regular application updates on the Play Store',
+      'Acted as the App production support in various cases',
     ],
-    technologies: ['JavaScript', 'React', 'PHP', 'MySQL', 'WordPress'],
+    technologies: ['Kotlin', 'Java', 'Android', 'MVVM', 'Git', 'CI/CD'],
+  },
+
+  {
+    id: 'exp-3',
+    title: 'Senior Android Developer',
+    company: 'Kashat By Pharos Financial Holding',
+    location: 'Egypt',
+    type: 'full-time',
+    startDate: '2020-03',
+    endDate: '2021-08',
+    current: false,
+    description:
+      'Enhanced the Kashat fintech lending application with new features that increased user engagement.',
+    achievements: [
+      'Enhanced the Kashat application, implementing new features that significantly increased user engagement',
+      'Collaborated with design and business teams to define and refine app features',
+      'Published regular application updates on the Play Store',
+      'Assisted the support team in promptly resolving user issues',
+    ],
+    technologies: ['Kotlin', 'Java', 'Android', 'MVVM', 'Git'],
+  },
+
+  {
+    id: 'exp-4',
+    title: 'Android Developer',
+    company: 'STS | Smart Touch Solutions',
+    location: 'Egypt',
+    type: 'full-time',
+    startDate: '2017-07',
+    endDate: '2020-03',
+    current: false,
+    description:
+      'Designed and developed mobile applications for the Android platform, meeting client requirements.',
+    achievements: [
+      'Designed and developed mobile applications for the Android platform',
+      'Collaborated with the design and analysis team to translate business needs into app features',
+      'Ensured the highest standards of quality, security, and performance',
+      'Published applications on the Play Store',
+      'Continuously improved and updated applications based on user feedback',
+    ],
+    technologies: ['Java', 'Android', 'XML', 'Git', 'MVC', 'MVP'],
+  },
+
+  {
+    id: 'exp-5',
+    title: 'Teaching Assistant',
+    company: 'October 6 University',
+    location: 'Egypt',
+    type: 'part-time',
+    startDate: '2018-07',
+    endDate: '2018-09',
+    current: false,
+    description:
+      'Teaching Assistant at the Faculty of Computer Science and Information Systems for Automata course.',
+    achievements: [
+      'Provided guidance and support to students, helping them understand course materials',
+    ],
+    technologies: ['Computer Science', 'Automata'],
   },
 
   // ---------------------------------------------------------------------------
-  // ADD MORE POSITIONS HERE
-  // Copy the template below and fill in your details
+  // INTERNSHIPS
   // ---------------------------------------------------------------------------
-  // {
-  //   id: 'exp-4',
-  //   title: 'Your Job Title',
-  //   company: 'Company Name',
-  //   companyLogo: '/logos/company.png',  // Optional
-  //   location: 'City, Country',
-  //   type: 'full-time',
-  //   startDate: 'YYYY-MM',
-  //   endDate: 'YYYY-MM',  // Remove for current position
-  //   current: false,
-  //   description: 'Brief description of your role and responsibilities.',
-  //   achievements: [
-  //     'Achievement with metrics...',
-  //     'Another achievement...',
-  //   ],
-  //   technologies: ['Tech1', 'Tech2', 'Tech3'],
-  // },
+  {
+    id: 'exp-6',
+    title: 'Mobile Developer Intern',
+    company: 'Sarmady A Vodafone Company',
+    location: 'Egypt',
+    type: 'full-time',
+    startDate: '2018-07',
+    endDate: '2018-09',
+    current: false,
+    description:
+      'Learned from mobile development team leads on each platform, gaining hands-on experience in Android and iOS development.',
+    achievements: [
+      'Gained hands-on experience in Android and iOS development',
+      'Worked on various assigned tasks and challenges',
+    ],
+    technologies: ['Android', 'iOS', 'Mobile Development'],
+  },
+
+  {
+    id: 'exp-7',
+    title: 'Software Engineer Trainee',
+    company: 'E-finance',
+    location: 'Egypt',
+    type: 'full-time',
+    startDate: '2017-07',
+    endDate: '2017-08',
+    current: false,
+    description:
+      'Comprehensive training in System Analysis, IT, Development, Operations, and HR departments.',
+    achievements: [
+      'Gained insights into various areas of software development and project delivery',
+      'Obtained practical knowledge of the software development life cycle',
+    ],
+    technologies: ['System Analysis', 'Software Engineering'],
+  },
 ];
 
 // =============================================================================
